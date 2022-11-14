@@ -30,22 +30,18 @@ const app = new Vue({
 			},
 		],
 		image : "",
-		i: "0",
+		i:0,
 		
 		
 	},
 	methods: {
 		
 		eleBtnRight() {
-
-			
-		
-		
 			
 			if (this.i == 0) {
 				this.i++;
 			}
-		
+		console.log(this.i)
 		
 		},
 	}
