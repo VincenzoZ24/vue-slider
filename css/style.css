@@ -154,3 +154,6 @@ body {
 	color: white;
 	cursor: pointer;
 }
+#root{
+	height: 100%;
+}

@@ -34,7 +34,6 @@ const app = new Vue({
 		
 		
 	},
-
 	methods: {
 		
 		eleBtnRight() {
@@ -43,7 +42,7 @@ const app = new Vue({
 		
 		
 			activeIndex++;
-			if (activeIndex === listEleImg.length) {
+			if (activeIndex === arrImageslength) {
 				activeIndex = 0;
 			}
 		
