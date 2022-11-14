@@ -43,7 +43,7 @@ const app = new Vue({
 		
 			
 			if (this.i == 0) {
-				this.i ++;
+				this.i++;
 			}
 		
 		
