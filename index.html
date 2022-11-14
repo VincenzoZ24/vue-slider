@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" defer></script>
     <script src="js/script.js" defer></script>
+
 </head>
 <body>
-    <div class="container-blur">
-		<div class="slider">
-			<div class="slider-viewer">
-             
-			</div>
+	<div id="root">
+		<div class="container-blur">
+			<div class="slider">
+				<div class="slider-viewer">
+				 <img :src="img.image" alt="" v-for="(img, i) in arrImages" class="slider"  :class="{active: i === 0}" >
+				 <h2></h2>
+				 <p></p>
 
-			<div class="thumbs">
-				<div class="controls">
-					<div class="btn-left">&lt;</div>
-					<div class="btn-right">&gt;</div>
 				</div>
+	
+				<div class="thumbs">
+					<div class="controls">
+						<div class="btn-left">&lt;</div>
+						<div @click="eleBtnRight" class="btn-right">&gt;</div>
+					</div>
+				</div>
+				<div class="container_button">
+					<button class="start">START</button>
+					<button  class="stop d_none">STOP</button>
+					<button class="reverse">REVERSE</button>
+				</div>
+				
 			</div>
-			<div class="container_button">
-				<button class="start">START</button>
-				<button class="stop d_none">STOP</button>
-				<button class="reverse">REVERSE</button>
-			</div>
-			
 		</div>
 	</div>
+   
     
 </body>
 </html>
