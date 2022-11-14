@@ -41,9 +41,9 @@ const app = new Vue({
 			
 		
 		
-			activeIndex++;
-			if (activeIndex === arrImageslength) {
-				activeIndex = 0;
+			
+			if (i === 0) {
+				i ++;
 			}
 		
 		
