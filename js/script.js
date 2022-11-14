@@ -30,7 +30,7 @@ const app = new Vue({
 			},
 		],
 		image : "",
-		i: "",
+		i: "0",
 		
 		
 	},
@@ -43,7 +43,7 @@ const app = new Vue({
 		
 			
 			if (this.i == 0) {
-				i ++;
+				this.i ++;
 			}
 		
 		
