@@ -16,7 +16,7 @@
 			<div class="slider">
 				<div class="slider-viewer">
 				 <img :src="img.image" alt="" v-for="(img, indice) in arrImages" class="slider-img "  :class="{active: indice == i}" >
-				 <h2></h2>
+				 <h2 class="text_img">{{ arrImages[i].title }}</h2>
 				 <p></p>
 
 				</div>
